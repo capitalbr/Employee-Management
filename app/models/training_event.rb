@@ -1,0 +1,2 @@
+class TrainingEvent < ApplicationRecord
+end
