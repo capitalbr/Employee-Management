@@ -43,7 +43,12 @@
 }
 .create-event-link{
   margin-top: 0px;
+  display: flex;
+  flex-direction: column;
   a{  
+    margin: 3px;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: blue;
   }

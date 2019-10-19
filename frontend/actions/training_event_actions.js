@@ -2,6 +2,7 @@ import * as TrainingEventAPIUtils from "../utils/training_event_utils";
 
 export const RECEIVE_TRAINING_EVENT = "RECEIVE_TRAINING_EVENT";
 export const RECEIVE_ALL_TRAINING_EVENTS = "RECEIVE_ALL_TRAINING_EVENTS";
+export const CLEAR_TRAINING_EVENTS = "CLEAR_TRAINING_EVENTS";
 
 // THUNKS
 export const createTrainingEvent = (trainingEvent) => {
@@ -41,5 +42,13 @@ export const fetchTrainingEvents = (query) => {
         type: RECEIVE_ALL_TRAINING_EVENTS,
         trainingEvents
       }));
+  }
+}
+
+export const clearTrainingEvents = () => {
+  return dispatch => {
+    dispatch({
+     type: CLEAR_TRAINING_EVENTS
+    })
   }
 }

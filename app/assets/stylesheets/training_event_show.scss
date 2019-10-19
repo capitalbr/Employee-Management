@@ -1,0 +1,38 @@
+.event-show{
+  display: flex;
+  justify-content: center;
+  &-container{
+    .index-item{
+      a{
+        color: #6ED5AB;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+      }
+      &-container{
+        margin: 25px;
+      }
+      &-contents{
+        margin: 12px;
+        span{
+          text-transform: capitalize;
+        }
+      }
+      #description{
+        #index-item-value{
+          height: 90px;
+          width: 200px;
+          overflow-y: auto;
+          overflow-x: wrap;
+          resize: none;
+          font-size: 14px;
+          margin-left: 20px;
+          border-color: rgb(219, 219, 219);
+          padding: 11px;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

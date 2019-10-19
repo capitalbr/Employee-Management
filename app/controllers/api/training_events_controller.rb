@@ -35,6 +35,7 @@ class Api::TrainingEventsController < ApplicationController
   def training_event_params
     params.require(:training_event)
     .permit(
+      :id,
       :name, 
       :description,
       :department,
