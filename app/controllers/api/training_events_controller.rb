@@ -5,7 +5,8 @@ class Api::TrainingEventsController < ApplicationController
 
   def index
     if params[:training_event][:query] != "all"
-      @training_event = TrainingEvent.find_by(name: :query)
+      # This is wher I ran out of time
+      
     else
       @training_event = TrainingEvent.all
     end
