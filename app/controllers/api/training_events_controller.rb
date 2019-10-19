@@ -4,7 +4,11 @@ class Api::TrainingEventsController < ApplicationController
   end
 
   def index
-    @training_event = TrainingEvent.all
+    if params[:training_event][:query] != "all"
+      @training_event = TrainingEvent.find_by(name: :query)
+    else
+      @training_event = TrainingEvent.all
+    end
   end
 
   def create
@@ -23,7 +27,7 @@ class Api::TrainingEventsController < ApplicationController
     if @training_event.update(training_event_params)
       render "api/training_events/show"
     else
-      render json: @training_event.errors.full_messages, status 422
+      render json: @training_event.errors.full_messages, status: 422
     end
   end
 
@@ -37,7 +41,8 @@ class Api::TrainingEventsController < ApplicationController
       :duration,
       :date,
       :time,
-      :room_number
+      :room_number,
+      :query
       )
   end
 

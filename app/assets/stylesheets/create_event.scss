@@ -1,0 +1,17 @@
+.create-event{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  label{
+    display: flex;
+    flex-direction: column;
+    .inputs{
+      margin: 5px 0px 10px 0px;
+      height: 18px;
+    } 
+    textarea.inputs{
+      height: 75px;
+    }
+  }
+ 
+}

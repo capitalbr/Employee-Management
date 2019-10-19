@@ -1,0 +1,11 @@
+json.extract!(
+    @training_event,
+    :id,
+    :name, 
+    :description,
+    :department,
+    :duration,
+    :date,
+    :time,
+    :room_number,
+    )

@@ -1,0 +1,17 @@
+.index-item{
+    display: flex;
+    justify-content: space-between;
+    a{
+      text-transform: capitalize;
+      text-decoration: none;
+      color: blue;
+    }
+  &-contents{
+    span{
+      margin-left: 40px;
+    }
+    
+  }
+  
+  
+}
